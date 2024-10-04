@@ -282,6 +282,7 @@ button {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  margin-left: 0;
   gap: 40px;
 }
 
@@ -325,8 +326,9 @@ button {
   justify-content: center;
 }
 
-.menu-social-list {
+.social-list.menu-social-list {
   gap: 40px;
+  justify-content: flex-start;
 }
 
 .social-list-link {
@@ -379,7 +381,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/people-office-mob.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -413,11 +415,43 @@ button {
   margin-bottom: 72px;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .page-main-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-mob@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .page-main-section {
     max-width: 768px;
     padding-top: 112px;
     padding-bottom: 112px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tab.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .page-main-section {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-tab@2x.jpg);
+    }
   }
 
   .main-title {
@@ -433,6 +467,25 @@ button {
     max-width: 1158px;
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-des.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .page-main-section {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-des@2x.jpg);
+    }
   }
 
   .main-title {
