@@ -228,6 +228,7 @@ button {
 
 .mobile-menu {
   position: fixed;
+  z-index: 9999;
   top: 0;
   left: 0;
   width: 100%;
@@ -302,13 +303,16 @@ button {
   color: #404bbf;
 }
 
+.menu-contacts {
+  margin-bottom: 48px;
+}
+
 .menu-contacts-list {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 48px;
 }
 
 .menu-contacts-list-link {
